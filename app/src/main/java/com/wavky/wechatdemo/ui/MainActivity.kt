@@ -3,12 +3,14 @@ package com.wavky.wechatdemo.ui
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.wavky.wechatdemo.ui.chats.ChatsView
 
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +25,11 @@ class MainActivity : ComponentActivity() {
 fun ContentView() {
   var selectingTab by remember { mutableStateOf(Tabs.CHATS) }
 
-  Column(Modifier.fillMaxHeight(), verticalArrangement = Arrangement.Bottom) {
+  Column(Modifier.fillMaxHeight()) {
+    when(selectingTab) {
+      Tabs.CHATS -> ChatsView(Modifier.weight(1f))
+      else -> Spacer(Modifier.fillMaxWidth().weight(1f))
+    }
     TabBar(selectingTab) { selectTab ->
       selectingTab = selectTab
     }

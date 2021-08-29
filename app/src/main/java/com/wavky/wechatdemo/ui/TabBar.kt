@@ -35,6 +35,7 @@ fun TabBar(selecting: Tabs, modifier: Modifier = Modifier, onTabClick: (Tabs) ->
       selectedTabIndex = selecting.ordinal,
       modifier = modifier,
       indicator = {}, // 消除底部的指示游标
+      divider = {},
       backgroundColor = Colors.tabBarGray
     ) {
       for (tab in Tabs.values()) {
@@ -98,7 +99,7 @@ enum class Tabs(val iconId: IconId, @StringRes val textId: Int) {
     if (selecting == this) iconId.on else iconId.off
 
   fun currentStateColor(selecting: Tabs): Color =
-    if (selecting == this) Colors.weChatGreen else Color.Black
+    if (selecting == this) Colors.weChatGreen else Color.Gray
 }
 
 @Preview

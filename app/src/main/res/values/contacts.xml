@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="contact_name_antony">Antony</string>
+    <string name="contact_name_apple">Apple</string>
+    <string name="contact_name_bosco">Bosco</string>
+    <string name="contact_name_joe">Joe</string>
+    <string name="contact_name_microsoft">Microsoft</string>
+    <string name="contact_name_muraosa">Muraosa</string>
+    <string name="contact_name_ron">Ron</string>
+    <string name="contact_name_saha">Saha</string>
+    <string name="contact_name_sony">Sony</string>
+    <string name="contact_name_unclewang">UncleWang</string>
+</resources>
