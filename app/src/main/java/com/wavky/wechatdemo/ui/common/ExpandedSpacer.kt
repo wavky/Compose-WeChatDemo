@@ -11,11 +11,11 @@ import androidx.compose.ui.Modifier
  * @author Wavky.Huang
  */
 @Composable
-fun ColumnScope.BalanceSpacer() {
+fun ColumnScope.ExpandedSpacer() {
   Spacer(modifier = Modifier.weight(1f))
 }
 
 @Composable
-fun RowScope.BalanceSpacer() {
+fun RowScope.ExpandedSpacer() {
   Spacer(modifier = Modifier.weight(1f))
 }

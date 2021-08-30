@@ -23,7 +23,8 @@ import com.wavky.wechatdemo.data.LastContactTime.TimeId
 import com.wavky.wechatdemo.data.LastContactTime.TimeString
 import com.wavky.wechatdemo.data.getDefaultChatList
 import com.wavky.wechatdemo.ui.Colors
-import com.wavky.wechatdemo.ui.common.BalanceSpacer
+import com.wavky.wechatdemo.ui.Sizes
+import com.wavky.wechatdemo.ui.common.ExpandedSpacer
 import com.wavky.wechatdemo.ui.common.extension.toStringRes
 
 /**
@@ -34,7 +35,7 @@ import com.wavky.wechatdemo.ui.common.extension.toStringRes
 fun ChatItemView(chat: Chat, modifier: Modifier = Modifier) {
   Row(
     modifier
-      .padding(horizontal = 16.dp)
+      .padding(horizontal = Sizes.defaultPadding)
       .height(80.dp)
       .fillMaxWidth(),
     verticalAlignment = Alignment.CenterVertically
@@ -46,9 +47,9 @@ fun ChatItemView(chat: Chat, modifier: Modifier = Modifier) {
         .size(50.dp)
         .clip(RoundedCornerShape(CornerSize(4.dp)))
     )
-    Spacer(Modifier.width(16.dp))
+    Spacer(Modifier.width(Sizes.defaultPadding))
     Column {
-      BalanceSpacer()
+      ExpandedSpacer()
       Row {
         Column {
           Text(
@@ -65,10 +66,10 @@ fun ChatItemView(chat: Chat, modifier: Modifier = Modifier) {
             maxLines = 1
           )
         }
-        Spacer(modifier = Modifier.weight(1f))
+        ExpandedSpacer()
         LastContactTimeText(chat.lastContactTime)
       }
-      BalanceSpacer()
+      ExpandedSpacer()
       Divider(thickness = 0.35.dp)
     }
   }
