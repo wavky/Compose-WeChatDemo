@@ -15,7 +15,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.wavky.wechatdemo.data.Contact
 import com.wavky.wechatdemo.data.getDefaultContactList
 import com.wavky.wechatdemo.ui.Sizes
@@ -47,7 +46,7 @@ fun ContactItemView(contact: Contact) {
           .clip(RoundedCornerShape(CornerSize(4.dp)))
       )
       Spacer(modifier = Modifier.width(15.dp))
-      Text(contact.nameId.toStringRes(), fontSize = 20.sp, maxLines = 1)
+      Text(contact.nameId.toStringRes(), fontSize = Sizes.fontItemTitle, maxLines = 1)
     }
   }
 }

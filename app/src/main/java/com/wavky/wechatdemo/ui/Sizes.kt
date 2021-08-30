@@ -1,6 +1,7 @@
 package com.wavky.wechatdemo.ui
 
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 /**
  * Created on 2021/08/30
@@ -9,4 +10,7 @@ import androidx.compose.ui.unit.dp
 object Sizes {
   val defaultPadding = 16.dp
   val divider = 0.35.dp
+
+  val fontItemTitle = 16.sp
+  val fontItemSubTitle = 14.sp
 }

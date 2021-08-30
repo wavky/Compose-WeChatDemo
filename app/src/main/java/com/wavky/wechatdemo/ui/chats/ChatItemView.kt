@@ -60,7 +60,7 @@ fun ChatItemView(chat: Chat, modifier: Modifier = Modifier) {
           )
           Text(
             chat.lastMessageId.toStringRes(),
-            fontSize = 14.sp,
+            fontSize = Sizes.fontItemSubTitle,
             fontWeight = FontWeight.Light,
             color = Color.Gray,
             maxLines = 1
