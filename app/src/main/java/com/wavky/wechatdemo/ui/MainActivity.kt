@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.wavky.wechatdemo.ui.chats.ChatsView
 import com.wavky.wechatdemo.ui.contacts.ContactsView
+import com.wavky.wechatdemo.ui.discover.DiscoverView
 
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +31,7 @@ fun ContentView() {
     when (selectingTab) {
       Tabs.CHATS -> ChatsView(Modifier.weight(1f))
       Tabs.CONTACTS -> ContactsView(Modifier.weight(1f))
+      Tabs.DISCOVER -> DiscoverView(Modifier.weight(1f))
       else -> Spacer(
         Modifier
           .fillMaxWidth()
