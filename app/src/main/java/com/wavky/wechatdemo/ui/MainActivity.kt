@@ -11,6 +11,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.wavky.wechatdemo.ui.chats.ChatsView
+import com.wavky.wechatdemo.ui.contacts.ContactsView
 
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,9 +27,14 @@ fun ContentView() {
   var selectingTab by remember { mutableStateOf(Tabs.CHATS) }
 
   Column(Modifier.fillMaxHeight()) {
-    when(selectingTab) {
+    when (selectingTab) {
       Tabs.CHATS -> ChatsView(Modifier.weight(1f))
-      else -> Spacer(Modifier.fillMaxWidth().weight(1f))
+      Tabs.CONTACTS -> ContactsView(Modifier.weight(1f))
+      else -> Spacer(
+        Modifier
+          .fillMaxWidth()
+          .weight(1f)
+      )
     }
     TabBar(selectingTab) { selectTab ->
       selectingTab = selectTab

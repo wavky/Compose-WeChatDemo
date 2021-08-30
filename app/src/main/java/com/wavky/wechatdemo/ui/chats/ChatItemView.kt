@@ -70,7 +70,7 @@ fun ChatItemView(chat: Chat, modifier: Modifier = Modifier) {
         LastContactTimeText(chat.lastContactTime)
       }
       ExpandedSpacer()
-      Divider(thickness = 0.35.dp)
+      Divider(thickness = Sizes.divider)
     }
   }
 }

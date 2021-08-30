@@ -8,4 +8,5 @@ import androidx.compose.ui.unit.dp
  */
 object Sizes {
   val defaultPadding = 16.dp
+  val divider = 0.35.dp
 }
