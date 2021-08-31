@@ -49,6 +49,7 @@ fun DiscoverView(modifier: Modifier = Modifier) {
       items[Nearby]?.toItemView()
       ItemSpacer()
       items[MiniPrograms]?.toItemView()
+      ItemSpacer()
     }
   }
 }
