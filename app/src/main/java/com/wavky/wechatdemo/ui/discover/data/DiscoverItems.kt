@@ -2,8 +2,8 @@ package com.wavky.wechatdemo.ui.discover.data
 
 import com.wavky.wechatdemo.R
 import com.wavky.wechatdemo.data.getDefaultContactList
-import com.wavky.wechatdemo.ui.Colors
 import com.wavky.wechatdemo.ui.common.ItemInfo
+import com.wavky.wechatdemo.ui.common.resource.Colors
 import com.wavky.wechatdemo.ui.discover.data.DiscoverItemName.*
 
 /**

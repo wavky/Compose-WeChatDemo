@@ -22,11 +22,11 @@ import com.wavky.wechatdemo.data.LastContactTime
 import com.wavky.wechatdemo.data.LastContactTime.TimeId
 import com.wavky.wechatdemo.data.LastContactTime.TimeString
 import com.wavky.wechatdemo.data.getDefaultChatList
-import com.wavky.wechatdemo.ui.Colors
-import com.wavky.wechatdemo.ui.Sizes
 import com.wavky.wechatdemo.ui.common.BadgedDecorator
 import com.wavky.wechatdemo.ui.common.ExpandedSpacer
 import com.wavky.wechatdemo.ui.common.extension.toStringRes
+import com.wavky.wechatdemo.ui.common.resource.Colors
+import com.wavky.wechatdemo.ui.common.resource.Sizes
 import kotlin.random.Random
 
 /**

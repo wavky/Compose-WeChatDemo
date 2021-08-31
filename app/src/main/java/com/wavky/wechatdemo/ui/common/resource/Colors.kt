@@ -1,4 +1,4 @@
-package com.wavky.wechatdemo.ui
+package com.wavky.wechatdemo.ui.common.resource
 
 import androidx.compose.ui.graphics.Color
 

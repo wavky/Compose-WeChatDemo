@@ -16,8 +16,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.wavky.wechatdemo.R
-import com.wavky.wechatdemo.ui.Colors
 import com.wavky.wechatdemo.ui.common.SecondaryTopBar
+import com.wavky.wechatdemo.ui.common.resource.Colors
 
 /**
  * Created on 2021/08/31

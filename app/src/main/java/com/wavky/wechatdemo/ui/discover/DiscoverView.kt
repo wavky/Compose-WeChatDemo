@@ -9,10 +9,10 @@ import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.wavky.wechatdemo.ui.Colors
 import com.wavky.wechatdemo.ui.Tabs
 import com.wavky.wechatdemo.ui.common.ItemSpacer
 import com.wavky.wechatdemo.ui.common.TopBar
+import com.wavky.wechatdemo.ui.common.resource.Colors
 import com.wavky.wechatdemo.ui.common.toItemView
 import com.wavky.wechatdemo.ui.discover.data.DiscoverItemName.*
 import com.wavky.wechatdemo.ui.discover.data.getDiscoverItems

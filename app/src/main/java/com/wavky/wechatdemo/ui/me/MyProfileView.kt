@@ -22,9 +22,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.wavky.wechatdemo.R
 import com.wavky.wechatdemo.data.MyProfile
-import com.wavky.wechatdemo.ui.Sizes
 import com.wavky.wechatdemo.ui.common.ExpandedSpacer
 import com.wavky.wechatdemo.ui.common.extension.toStringRes
+import com.wavky.wechatdemo.ui.common.resource.Sizes
 
 /**
  * Created on 2021/08/31

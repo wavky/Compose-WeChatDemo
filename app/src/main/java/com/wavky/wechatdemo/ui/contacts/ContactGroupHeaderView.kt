@@ -10,8 +10,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.wavky.wechatdemo.data.getDefaultContactList
-import com.wavky.wechatdemo.ui.Colors
-import com.wavky.wechatdemo.ui.Sizes
+import com.wavky.wechatdemo.ui.common.resource.Colors
+import com.wavky.wechatdemo.ui.common.resource.Sizes
 
 /**
  * Created on 2021/08/30

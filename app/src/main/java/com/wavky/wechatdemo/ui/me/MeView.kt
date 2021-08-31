@@ -10,8 +10,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.tooling.preview.Preview
-import com.wavky.wechatdemo.ui.Colors
 import com.wavky.wechatdemo.ui.common.ItemSpacer
+import com.wavky.wechatdemo.ui.common.resource.Colors
 import com.wavky.wechatdemo.ui.common.toItemView
 import com.wavky.wechatdemo.ui.me.data.MeItemName.*
 import com.wavky.wechatdemo.ui.me.data.getMeItems
