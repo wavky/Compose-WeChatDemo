@@ -11,7 +11,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import com.wavky.wechatdemo.R
 import com.wavky.wechatdemo.data.getDefaultChatList
-import com.wavky.wechatdemo.ui.TopBar
+import com.wavky.wechatdemo.ui.common.TopBar
 
 /**
  * Created on 2021/08/29

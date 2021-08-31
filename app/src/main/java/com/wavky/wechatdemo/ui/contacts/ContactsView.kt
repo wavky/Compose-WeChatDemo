@@ -11,7 +11,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.wavky.wechatdemo.data.Contact
 import com.wavky.wechatdemo.data.getDefaultContactList
 import com.wavky.wechatdemo.ui.Tabs
-import com.wavky.wechatdemo.ui.TopBar
+import com.wavky.wechatdemo.ui.common.TopBar
 import com.wavky.wechatdemo.ui.common.extension.toStringRes
 
 /**

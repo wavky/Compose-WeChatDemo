@@ -1,4 +1,4 @@
-package com.wavky.wechatdemo.ui
+package com.wavky.wechatdemo.ui.common
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.background
@@ -13,6 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.wavky.wechatdemo.R
+import com.wavky.wechatdemo.ui.Colors
 import com.wavky.wechatdemo.ui.common.extension.toStringRes
 
 /**
@@ -55,7 +56,6 @@ fun TopBar(@StringRes titleId: Int) {
     }
   }
 }
-
 
 @Preview
 @Composable
