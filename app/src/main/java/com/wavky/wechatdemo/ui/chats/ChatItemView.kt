@@ -24,8 +24,10 @@ import com.wavky.wechatdemo.data.LastContactTime.TimeString
 import com.wavky.wechatdemo.data.getDefaultChatList
 import com.wavky.wechatdemo.ui.Colors
 import com.wavky.wechatdemo.ui.Sizes
+import com.wavky.wechatdemo.ui.common.BadgedDecorator
 import com.wavky.wechatdemo.ui.common.ExpandedSpacer
 import com.wavky.wechatdemo.ui.common.extension.toStringRes
+import kotlin.random.Random
 
 /**
  * Created on 2021/08/29
@@ -33,6 +35,7 @@ import com.wavky.wechatdemo.ui.common.extension.toStringRes
  */
 @Composable
 fun ChatItemView(chat: Chat, modifier: Modifier = Modifier) {
+  val isShowBadge = Random.nextFloat() > 0.45
   Row(
     modifier
       .padding(horizontal = Sizes.defaultPadding)
@@ -40,13 +43,15 @@ fun ChatItemView(chat: Chat, modifier: Modifier = Modifier) {
       .fillMaxWidth(),
     verticalAlignment = Alignment.CenterVertically
   ) {
-    Image(
-      painter = painterResource(id = chat.contact.profileImageId),
-      contentDescription = "profile image",
-      Modifier
-        .size(50.dp)
-        .clip(RoundedCornerShape(CornerSize(4.dp)))
-    )
+    BadgedDecorator(isShowBadge) {
+      Image(
+        painter = painterResource(id = chat.contact.profileImageId),
+        contentDescription = "profile image",
+        Modifier
+          .size(50.dp)
+          .clip(RoundedCornerShape(CornerSize(4.dp)))
+      )
+    }
     Spacer(Modifier.width(Sizes.defaultPadding))
     Column {
       ExpandedSpacer()

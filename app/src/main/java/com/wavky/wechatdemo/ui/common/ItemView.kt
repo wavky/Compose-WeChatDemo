@@ -29,7 +29,7 @@ import com.wavky.wechatdemo.ui.common.extension.toStringRes
  * @author Wavky.Huang
  */
 @Composable
-fun ItemView(itemInfo: ItemInfo, withDivider: Boolean) {
+fun ItemView(itemInfo: ItemInfo, withDivider: Boolean, withBadge: Boolean) {
   Row(
     Modifier
       .fillMaxWidth()
@@ -56,13 +56,15 @@ fun ItemView(itemInfo: ItemInfo, withDivider: Boolean) {
           )
         }
         itemInfo.profileImageId?.let { imageId ->
-          Image(
-            painterResource(imageId), contentDescription = "profile image",
-            Modifier
-              .padding(end = 4.dp)
-              .size(40.dp)
-              .clip(CircleShape)
-          )
+          BadgedDecorator(withBadge) {
+            Image(
+              painterResource(imageId), contentDescription = "profile image",
+              Modifier
+                .padding(end = 4.dp)
+                .size(40.dp)
+                .clip(CircleShape)
+            )
+          }
         }
         Icon(
           painterResource(R.drawable.ic_right),
@@ -103,8 +105,8 @@ data class ItemInfo(
 )
 
 @Composable
-fun ItemInfo.toItemView(withDivider: Boolean = false) {
-  ItemView(itemInfo = this, withDivider = withDivider)
+fun ItemInfo.toItemView(withDivider: Boolean = false, withBadge: Boolean = true) {
+  ItemView(itemInfo = this, withDivider = withDivider, withBadge = withBadge)
 }
 
 @Preview
