@@ -17,6 +17,10 @@ import com.wavky.wechatdemo.ui.chats.detail.viewmodel.ChatDetailViewModelFactory
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.ObsoleteCoroutinesApi
 
+/**
+ * Created on 2021/09/01
+ * @author Wavky.Huang
+ */
 @FlowPreview
 @ObsoleteCoroutinesApi
 class ChatDetailActivity : ComponentActivity() {
