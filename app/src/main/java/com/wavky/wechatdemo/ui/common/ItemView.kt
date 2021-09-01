@@ -49,7 +49,7 @@ fun ItemView(itemInfo: ItemInfo, withDivider: Boolean, withBadge: Boolean) {
         itemInfo.nameId?.toStringRes()?.let { name ->
           Text(
             name,
-            Modifier.padding(horizontal = 8.dp),
+            Modifier.padding(horizontal = Sizes.itemSpacing),
             fontSize = Sizes.fontItemSubTitle,
             maxLines = 1,
             color = Color.Gray

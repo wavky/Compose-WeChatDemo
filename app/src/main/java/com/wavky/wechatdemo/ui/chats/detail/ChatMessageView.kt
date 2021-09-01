@@ -44,7 +44,7 @@ fun ChatMessageView(message: ChatMessage) {
         painterResource(message.side.profileImageId),
         contentDescription = "profile image",
         Modifier
-          .padding(end = 8.dp)
+          .padding(end = Sizes.itemSpacing)
           .size(40.dp)
           .clip(RoundedCornerShape(CornerSize(4.dp)))
       )
