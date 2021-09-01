@@ -1,8 +1,10 @@
 package com.wavky.wechatdemo.data
 
+import android.os.Parcelable
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import com.wavky.wechatdemo.R
+import kotlinx.parcelize.Parcelize
 
 /**
  * Created on 2021/08/29
@@ -11,10 +13,11 @@ import com.wavky.wechatdemo.R
 fun getDefaultContactList(): List<Contact> =
   Friends.values().map { it.contact }
 
+@Parcelize
 data class Contact(
   @DrawableRes val profileImageId: Int,
   @StringRes val nameId: Int
-)
+) : Parcelable
 
 enum class Friends(val contact: Contact) {
   Antony(

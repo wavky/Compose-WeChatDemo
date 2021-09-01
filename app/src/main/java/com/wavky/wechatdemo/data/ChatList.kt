@@ -1,9 +1,11 @@
 package com.wavky.wechatdemo.data
 
+import android.os.Parcelable
 import androidx.annotation.StringRes
 import com.wavky.wechatdemo.R
 import com.wavky.wechatdemo.data.LastContactTime.TimeId
 import com.wavky.wechatdemo.data.LastContactTime.TimeString
+import kotlinx.parcelize.Parcelize
 
 /**
  * Created on 2021/08/29
@@ -48,13 +50,17 @@ fun getDefaultChatList(): List<Chat> {
   return chatList
 }
 
+@Parcelize
 data class Chat(
   val contact: Contact,
   @StringRes val lastMessageId: Int,
   val lastContactTime: LastContactTime
-)
+) : Parcelable
 
-sealed class LastContactTime {
+sealed class LastContactTime : Parcelable {
+  @Parcelize
   data class TimeString(val time: String) : LastContactTime()
+
+  @Parcelize
   data class TimeId(@StringRes val time: Int) : LastContactTime()
 }

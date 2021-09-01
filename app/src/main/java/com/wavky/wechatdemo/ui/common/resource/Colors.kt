@@ -8,6 +8,7 @@ import androidx.compose.ui.graphics.Color
  */
 object Colors {
   val weChatGreen = Color(0xFF56BD6A)
+  val chatGreen = Color(0xFF94EB68)
   val topBarGray = Color(0xFFEDEDED)
   val tabBarGray = Color(0xFFF7F7F7)
   val backgroundGray = Color(0xFFD0D0D0)

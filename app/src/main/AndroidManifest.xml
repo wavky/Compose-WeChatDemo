@@ -20,6 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.chats.detail.ChatDetailActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.WeChatDemo.NoActionBar" />
     </application>
 
 </manifest>

@@ -9,6 +9,7 @@ import androidx.compose.ui.unit.sp
  */
 object Sizes {
   val defaultPadding = 16.dp
+  val itemSpacing = 8.dp
   val divider = 0.35.dp
 
   val fontItemTitle = 16.sp
