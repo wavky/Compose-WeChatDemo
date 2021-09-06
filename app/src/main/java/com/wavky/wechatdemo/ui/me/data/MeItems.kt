@@ -1,7 +1,9 @@
 package com.wavky.wechatdemo.ui.me.data
 
+import androidx.compose.ui.graphics.Brush
 import com.wavky.wechatdemo.R
 import com.wavky.wechatdemo.ui.common.ItemInfo
+import com.wavky.wechatdemo.ui.common.extension.MaskPattern
 import com.wavky.wechatdemo.ui.common.resource.Colors
 import com.wavky.wechatdemo.ui.me.data.MeItemName.*
 
@@ -13,49 +15,59 @@ fun getMeItems(): Map<MeItemName, ItemInfo> =
   mapOf(
     Pay to ItemInfo(
       iconId = R.drawable.ic_me_pay,
-      iconColor = Colors.Me.payGreen,
+      iconPattern = MaskPattern.ColorPattern(Colors.Me.payGreen),
       titleId = R.string.me_pay,
       nameId = null,
       profileImageId = null
     ),
     Favorites to ItemInfo(
       iconId = R.drawable.ic_me_favorites,
-      iconColor = Colors.Me.favoritesRed,
+      iconPattern = MaskPattern.GradientPattern(
+        Brush.sweepGradient(
+          listOf(
+            Colors.Me.Favorites.red,
+            Colors.Me.Favorites.yellow,
+            Colors.Me.Favorites.yellow,
+            Colors.Me.Favorites.blue,
+            Colors.Me.Favorites.red
+          )
+        )
+      ),
       titleId = R.string.me_favorites,
       nameId = null,
       profileImageId = null
     ),
     Moments to ItemInfo(
       iconId = R.drawable.ic_me_moments,
-      iconColor = Colors.Me.momentsBlue,
+      iconPattern = MaskPattern.ColorPattern(Colors.Me.momentsBlue),
       titleId = R.string.me_moments,
       nameId = null,
       profileImageId = null
     ),
     Channels to ItemInfo(
       iconId = R.drawable.ic_me_channels,
-      iconColor = Colors.Me.channelsOrange,
+      iconPattern = MaskPattern.ColorPattern(Colors.Me.channelsOrange),
       titleId = R.string.me_channels,
       nameId = null,
       profileImageId = null
     ),
     Cards to ItemInfo(
       iconId = R.drawable.ic_me_cards,
-      iconColor = Colors.Me.cardsBlue,
+      iconPattern = MaskPattern.ColorPattern(Colors.Me.cardsBlue),
       titleId = R.string.me_cards,
       nameId = null,
       profileImageId = null
     ),
     Sticker to ItemInfo(
       iconId = R.drawable.ic_me_sticker,
-      iconColor = Colors.Me.stickerYellow,
+      iconPattern = MaskPattern.ColorPattern(Colors.Me.stickerYellow),
       titleId = R.string.me_sticker,
       nameId = null,
       profileImageId = null
     ),
     Settings to ItemInfo(
       iconId = R.drawable.ic_me_settings,
-      iconColor = Colors.Me.settingsBlue,
+      iconPattern = MaskPattern.ColorPattern(Colors.Me.settingsBlue),
       titleId = R.string.me_settings,
       nameId = null,
       profileImageId = null

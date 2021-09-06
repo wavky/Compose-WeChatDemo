@@ -16,6 +16,13 @@ object Colors {
   val lightGray = Color(0xFFCACACA)
 
   object Discover {
+    object Moments {
+      val blue = Color(0xFF474CEF)
+      val green = Color(0xFF00C15C)
+      val red = Color(0xFFF90808)
+      val yellow = Color(0xFFFFC300)
+    }
+
     val channelsOrange = Color(0xFFF9961D)
     val liveRed = Color(0xFFFF5636)
     val miniProgramsPurple = Color(0xFF343BEE)
@@ -27,6 +34,12 @@ object Colors {
   }
 
   object Me {
+    object Favorites {
+      val blue = Color(0xFF017FF1)
+      val red = Color(0xFFF50000)
+      val yellow = Color(0xFFFFBE00)
+    }
+
     val payGreen = Color(0xFF00BF5D)
     val favoritesRed = Color(0xFFF50000)
     val momentsBlue = Color(0xFF0074ED)
