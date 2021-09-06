@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="last_message_message_hi">Hi</string>
+    <string name="last_message_message_hey">Hey</string>
+    <string name="last_message_message_hello">Hello</string>
+    <string name="last_message_message_nice_to_meet_you">Nice to meet you~</string>
+    <string name="last_message_message_how_are_you">How are you?</string>
+    <string name="last_message_message_aloha">Aloha</string>
+    <string name="last_message_message_are_you_still_there">Are you still there?</string>
+    <string name="last_message_message_i_love_you">I love you!</string>
+    <string name="last_message_message_the_matrix_is_looking_for_you">The Matrix is looking for you.</string>
+    <string name="last_message_message_i_am_robot">I am robot.</string>
+
+    <string name="last_message_datetime_yesterday">Yesterday</string>
+    <string name="last_message_datetime_monday">Monday</string>
+    <string name="last_message_datetime_sunday">Sunday</string>
+</resources>
